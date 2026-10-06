@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eaf4ff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.app {
+    max-width: 900px;
+    width: 100%;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.eyebrow {
+    color: #3b82f6;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.intro h1 {
+    color: #1e3a8a;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.intro p {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+/* Container Dua Panel */
+.panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+/* Kartu Form & Kartu Hasil */
+form, .result {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 6px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #1e293b;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: #2563eb;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+button {
+    margin-top: 8px;
+    padding: 12px;
+    background-color: #1e40af;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Tampilan Hasil Perhitungan */
+.result h2 {
+    font-size: 1.1rem;
+    color: #1e293b;
+    margin-bottom: 4px;
+}
+
+.result .nama-mhs {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 16px;
+}
+
+.score-display {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #0d9488;
+    line-height: 1;
+    margin-bottom: 6px;
+}
+
+.status-badge {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.status-badge.Lulus {
+    color: #059669;
+}
+
+.status-badge.Gagal {
+    color: #dc2626;
+}
+
+/* Grid Rincian Nilai di Bagian Bawah Hasil */
+.detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.detail-card {
+    background-color: #f8fafc;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    color: #475569;
+    border: 1px solid #f1f5f9;
+}
+
+.detail-card strong {
+    color: #0f172a;
+}
